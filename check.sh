@@ -5,7 +5,7 @@ cp ../CSE12-styleChecker/checkstyle-10.7.0-all.jar ../starter
 cp ../CSE12-styleChecker/checkstyle.xml ../starter
 
 
-if [[ -f starter/$1 ]]
+if [[ -e starter/$1 ]]
 then 
 java -jar checkstyle-10.7.0-all.jar -c checkstyle.xml $1
 
